@@ -1,0 +1,8 @@
+web:
+  build: django_docker
+  ports:
+   - "8000:8000"
+  links:
+   - redis
+redis:
+  build: redis
